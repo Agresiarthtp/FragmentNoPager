@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1096688582853",
+    "firebase_url": "https://apaaja-131e9.firebaseio.com",
+    "project_id": "apaaja-131e9",
+    "storage_bucket": "apaaja-131e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096688582853:android:c19ecdfcadd782e6",
+        "android_client_info": {
+          "package_name": "com.example.moriesdeohutapea.fragmentnopager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096688582853-3q93hsr4pqj83soqani80aiovafgnpct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moriesdeohutapea.fragmentnopager",
+            "certificate_hash": "fc9d130246fe3dc3edd91fd149d2826b87f89db5"
+          }
+        },
+        {
+          "client_id": "1096688582853-q8vg6jqv7npgc27tee0tohq1nl7vrc2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKb5xBT83luLilkbwVwZP2WPymNHy079M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096688582853-q8vg6jqv7npgc27tee0tohq1nl7vrc2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
