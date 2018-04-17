@@ -41,7 +41,6 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         //ini hanya sebuah nama saja
         Log.d("MyFlexibleFragment", "Fragment Name : " + A.class.getSimpleName());
         mFragmentTransaction.commit();
-
     }
 
     void mA() {
