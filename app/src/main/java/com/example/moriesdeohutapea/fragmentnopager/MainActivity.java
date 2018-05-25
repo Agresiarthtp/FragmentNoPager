@@ -25,7 +25,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         btnA = (Button) findViewById(R.id.keA);
         btnB = (Button) findViewById(R.id.keB);
         btnC = (Button) findViewById(R.id.keC);
-        btnExit = (Button)findViewById(R.id.exit);
+        btnExit = (Button) findViewById(R.id.exit);
 
         btnA.setOnClickListener(this);
         btnB.setOnClickListener(this);
@@ -34,9 +34,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
         FragmentManager mFragmentManager = getSupportFragmentManager();
         FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
-        
+
         A mA = new A();
-        mFragmentTransaction.add(R.id.container,mA,A.class.getSimpleName());
+        mFragmentTransaction.add(R.id.container, mA, A.class.getSimpleName());
 
         //ini hanya sebuah nama saja
         Log.d("MyFlexibleFragment", "Fragment Name : " + A.class.getSimpleName());
@@ -53,27 +53,27 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     void mB() {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         classB = new B();
-        fragmentTransaction.replace(R.id.container,classB);
+        fragmentTransaction.replace(R.id.container, classB);
         fragmentTransaction.commit();
     }
 
     void mC() {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         classC = new C();
-        fragmentTransaction.replace(R.id.container,classC);
+        fragmentTransaction.replace(R.id.container, classC);
         fragmentTransaction.commit();
     }
 
     @Override
     public void onClick(View v) {
 
-        if (v==btnA)
+        if (v == btnA)
             mA();
-        if (v==btnB)
+        if (v == btnB)
             mB();
-        if (v==btnC)
+        if (v == btnC)
             mC();
-        if (v==btnExit)
+        if (v == btnExit)
             finish();
     }
 }

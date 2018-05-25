@@ -17,10 +17,6 @@ import android.widget.Toast;
  */
 public class A extends Fragment {
 
-    private EditText editText;
-    private Button button;
-
-
     public A() {
         // Required empty public constructor
     }
@@ -32,18 +28,6 @@ public class A extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_a, container, false);
 
-
-        button = (Button) view.findViewById(R.id.btnnext);
-        editText = (EditText) view.findViewById(R.id.edt1);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getContext(), B.class));
-            }
-        });
-
         return view;
     }
-
 }
