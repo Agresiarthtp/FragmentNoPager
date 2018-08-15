@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
 
-    private Button btnA, btnB, btnC, btnExit;
+    private Button btnA, btnB, btnC, btnExit, btntabbawah;
     private A classA;
     private B classB;
     private C classC;
@@ -26,21 +26,22 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         btnB = (Button) findViewById(R.id.keB);
         btnC = (Button) findViewById(R.id.keC);
         btnExit = (Button) findViewById(R.id.exit);
+        btntabbawah = (Button) findViewById(R.id.btntabbawah);
 
         btnA.setOnClickListener(this);
         btnB.setOnClickListener(this);
         btnC.setOnClickListener(this);
         btnExit.setOnClickListener(this);
+        btntabbawah.setOnClickListener(this);
 
         FragmentManager mFragmentManager = getSupportFragmentManager();
         FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
 
         A mA = new A();
         mFragmentTransaction.add(R.id.container, mA, A.class.getSimpleName());
-
+        mFragmentTransaction.commit();
         //ini hanya sebuah nama saja
         Log.d("MyFlexibleFragment", "Fragment Name : " + A.class.getSimpleName());
-        mFragmentTransaction.commit();
     }
 
     void mA() {
@@ -75,5 +76,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
             mC();
         if (v == btnExit)
             finish();
+        if (v == btntabbawah)
+            Toast.makeText(this, "Button", Toast.LENGTH_SHORT).show();
     }
 }
