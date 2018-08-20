@@ -77,6 +77,6 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         if (v == btnExit)
             finish();
         if (v == btntabbawah)
-            Toast.makeText(this, "Button", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "TAB BAWAH", Toast.LENGTH_SHORT).show();
     }
 }
