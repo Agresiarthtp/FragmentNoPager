@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -52,7 +51,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -61,6 +59,7 @@
             android:id="@+id/btntabbawah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:background="@drawable/edittext"
             android:text="TAB Bawah" />
     </LinearLayout>
@@ -69,6 +68,7 @@
         android:id="@+id/container"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_margin="8dp"
         android:background="@color/colorAccent"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/ew"

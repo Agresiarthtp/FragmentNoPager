@@ -1,5 +1,6 @@
 package com.example.moriesdeohutapea.fragmentnopager;
 
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -7,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -67,6 +70,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
+        final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.animation);
 
         if (v == btnA)
             mA();
@@ -76,7 +80,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
             mC();
         if (v == btnExit)
             finish();
-        if (v == btntabbawah)
+        if (v == btntabbawah) {
             Toast.makeText(this, "TAB BAWAH", Toast.LENGTH_SHORT).show();
+//            Snackbar.make(v, "Belum Tersedia", Snackbar.LENGTH_SHORT).setAction("Action", null).show();
+        }
+        v.startAnimation(myAnim);
     }
 }
