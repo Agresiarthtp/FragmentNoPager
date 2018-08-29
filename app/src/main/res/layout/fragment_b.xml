@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context="com.example.moriesdeohutapea.fragmentnopager.B">
+    tools:context="com.example.moriesdeohutapea.fragmentnopager.FragmentB">
 
     <!-- TODO: Update blank fragment layout -->
 

@@ -1,10 +1,8 @@
 package com.example.moriesdeohutapea.fragmentnopager;
 
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,9 +14,9 @@ import android.widget.Toast;
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
 
     private Button btnA, btnB, btnC, btnExit, btntabbawah;
-    private A classA;
-    private B classB;
-    private C classC;
+    private FragmentA classFragmentA;
+    private FragmentB classFragmentB;
+    private FragmentC classFragmentC;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,32 +37,30 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
         FragmentManager mFragmentManager = getSupportFragmentManager();
         FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
-
-        A mA = new A();
-        mFragmentTransaction.add(R.id.container, mA, A.class.getSimpleName());
+        FragmentA mFragmentA = new FragmentA();
+        mFragmentTransaction.add(R.id.container, mFragmentA);
         mFragmentTransaction.commit();
-        //ini hanya sebuah nama saja
-        Log.d("MyFlexibleFragment", "Fragment Name : " + A.class.getSimpleName());
+        Log.d("MyFlexibleFragment", "Fragment Name : " + FragmentA.class.getSimpleName());
     }
 
     void mA() {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        classA = new A();
-        fragmentTransaction.replace(R.id.container, classA);
+        classFragmentA = new FragmentA();
+        fragmentTransaction.replace(R.id.container, classFragmentA);
         fragmentTransaction.commit();
     }
 
     void mB() {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        classB = new B();
-        fragmentTransaction.replace(R.id.container, classB);
+        classFragmentB = new FragmentB();
+        fragmentTransaction.replace(R.id.container, classFragmentB);
         fragmentTransaction.commit();
     }
 
     void mC() {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        classC = new C();
-        fragmentTransaction.replace(R.id.container, classC);
+        classFragmentC = new FragmentC();
+        fragmentTransaction.replace(R.id.container, classFragmentC);
         fragmentTransaction.commit();
     }
 

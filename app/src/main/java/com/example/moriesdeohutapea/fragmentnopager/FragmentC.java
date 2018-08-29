@@ -10,13 +10,13 @@ import android.widget.TextView;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * FragmentA simple {@link Fragment} subclass.
  */
-public class C extends Fragment {
+public class FragmentC extends Fragment {
     private TextView textView;
 
 
-    public C() {
+    public FragmentC() {
         // Required empty public constructor
     }
 
