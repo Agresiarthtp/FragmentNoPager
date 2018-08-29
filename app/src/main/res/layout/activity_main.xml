@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
+        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,24 +22,28 @@
             android:id="@+id/keA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
             android:text="A" />
 
         <Button
             android:id="@+id/keB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
             android:text="B" />
 
         <Button
             android:id="@+id/keC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
             android:text="C" />
 
         <Button
             android:id="@+id/exit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
             android:text="exit" />
     </LinearLayout>
 
@@ -47,6 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -55,6 +61,7 @@
             android:id="@+id/btntabbawah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
             android:text="TAB Bawah" />
     </LinearLayout>
 
